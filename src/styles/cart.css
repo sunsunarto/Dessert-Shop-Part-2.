@@ -1,0 +1,111 @@
+.container-cart {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 1rem auto;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    text-align: left;
+    padding: 2rem;
+    background-color: hsl(0,0%,100%);
+    float:right;
+    border-radius: 20px;
+    width: 400px;
+    .empty-cart svg{
+        position: relative;
+        left: 8rem;
+        top: 2rem;
+    }
+    .empty-cart h6{
+        font-size: small;
+        position: relative;
+        color:hsl(7, 20%, 60%);
+        top: 2rem;
+        left: 5rem;
+    }
+    h1{
+        color:hsl(14, 86%, 42%) ;
+    }
+    h2{ 
+        color: hsl(14, 86%, 42%);
+    }
+}
+.cart-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 1px solid hsl(14, 86%, 42%);
+    margin-bottom: 10px;
+    span{
+        color: hsl(14, 86%, 42%);
+    }
+    .empty-cart svg{
+        margin-left: 70px;
+    }
+    .quantityItems{
+        color: hsl(14, 86%, 42%);
+        font-weight: 600;
+    }
+    .pricePerItems{
+        color: hsl(7, 20%, 60%);
+        font-weight: 600;
+    }
+    .totalItems{
+        color: black;
+    }
+}
+.cart-item button {
+    position: relative;
+    border: none;
+    border-radius: 100px;
+    color: hsl(14, 25%, 72%);
+    cursor: pointer;
+    top: -1rem;
+    right: -24rem;
+    background-color: hsl(0,0%,100%);
+    
+}
+.checkoutFolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    p{
+        padding: 10px 40px;
+        border-radius: 10px;
+        background-color: hsl(13, 31%, 94%);
+        span{
+            color: hsl(14, 86%, 42%);
+            font-weight: 600;
+        }
+    }
+    button{
+        padding: 10px 40px;
+        border-radius: 100px;
+        background-color: hsl(14, 86%, 42%);
+        color: hsl(0,0%,100%);
+        cursor: pointer;
+        width: 100%;
+    }
+}
+.totalOrder{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    h2{
+        color: black;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container-cart {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 5rem;
+      margin:2rem;
+    }
+}
