@@ -49,6 +49,7 @@
     margin-bottom: 15px;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid hsl(14, 86%, 42%);
     .itemAndTotal{
         display: flex;
         width: 100%;
@@ -92,3 +93,12 @@
 .notification-body button:hover {
     background-color: hsl(14, 86%, 42%)
 }
+.notification-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.notification-footer h3{
+        color: black;
+    }

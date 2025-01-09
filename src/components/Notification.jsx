@@ -5,7 +5,10 @@ const Notification = ({ isOpen, items, setIsNotificationOpen, setCartItems }) =>
     if (!isOpen) {
         return null;
     }
-
+    const total = items.reduce(
+        (sum, item) => sum + item.price * item.quantity,
+        0
+    );
     const handleClose = () => {
         setIsNotificationOpen(false);
         setCartItems([]); 
@@ -39,6 +42,10 @@ const Notification = ({ isOpen, items, setIsNotificationOpen, setCartItems }) =>
                             </li>
                         ))}
                     </ul>
+                </div>
+                <div className="notification-footer">
+                    <p>Order Total</p>
+                    <h3>${total.toFixed(2)}</h3>
                 </div>
                 <button onClick={handleClose}>Start New Order</button>
             </div>
