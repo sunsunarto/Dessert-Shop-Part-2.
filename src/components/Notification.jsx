@@ -30,7 +30,7 @@ const Notification = ({ isOpen, items, setIsNotificationOpen, setCartItems }) =>
                                 <div className="itemAndTotal">
                                 <div className="item-details">
                                     <h6>{item.name}</h6>
-                                    <p>{item.quantity}x @ ${item.price.toFixed(2)}</p>
+                                    <p><span className="quantity">{item.quantity}x </span><span className="price-">@ ${item.price.toFixed(2)}</span></p>
                                 </div>
                                 <div className="total-cost">
                                     <p>${(item.price * item.quantity).toFixed(2)}</p>
